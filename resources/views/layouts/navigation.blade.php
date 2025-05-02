@@ -6,10 +6,15 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('rumah-sakit.index')" :active="request()->routeIs('rumah-sakit.*')">
+                        {{ __('Rumah Sakit') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:flex">
+                  <x-nav-link :href="route('pasien.index')" :active="request()->routeIs('pasien.*')">
+                      {{ __('Pasien') }}
+                  </x-nav-link>
+              </div>
             </div>
 
             <!-- Settings Dropdown -->
